@@ -10,6 +10,8 @@ public class Atividade2Numeros {
 		
 		int numero1 = 5;
 		int numero2 = 10;
+		char opcao = 's';
+	    String mensagem = "Boa Tarde!";
 		
 		String nome = "Julia";
 		String sobrenome = "Wanderley";  
@@ -17,9 +19,10 @@ public class Atividade2Numeros {
 		boolean falso = false;
 		int idade = 27;
 		
-		
-		
-		
+	
+	
+		System.out.println (opcao);
+		System.out.println (mensagem);
 		System.out.println(numero1 + numero2 );
 		System.out.println ("***********************************");
 		System.out.println("Meu nome é: " +  nome + " e tenho "  +  idade  + " anos");
