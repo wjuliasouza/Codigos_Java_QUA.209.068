@@ -10,22 +10,21 @@ public class Exercicio1 {
 		//Se não for divisível por 100, então, é bissexto 
 		//Se for divisível por 400, então, é bissexto
 		
-		int ano = 0;
 		Scanner leia = new Scanner (System.in);
+		int ano = 0;
 
         System.out.println("Digite um ano para saber se é bissexto:");
-        ano = leia.nextInt (); 
+        ano = leia.nextInt(); 
 		
-	if ((ano %4 == 0)&&(ano %100 != 0));{ 
-		System.out.println(ano + " é bissexto");
+	if (ano %4 == 0 && ano %100 != 0){ 
+		System.out.println("é um ano bissexto!");
 		
-	}else if (ano %400 == 0); {
-		System.out.println(ano + " é bissexto");
-	}else {
-		System.out.println("Não é bissexto");
+	} else if (ano %400 == 0) {
+		System.out.println("é um ano bissexto!");
 	}
-	
-	
+	else {
+		System.out.println("não é um ano bissexto!");
+	}
 		leia.close ();
 
 		
