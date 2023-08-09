@@ -10,26 +10,35 @@ public class atividade1 {
 		*  Mostre uma mensagem caso o valor seja inválido 
 		*  e continue pedindo até que o usuário informe um valor válido.
 		 */
-		Scanner leia = new Scanner (System.in);
+		Scanner sc = new Scanner (System.in);
 
-        int nota = 3;
-		System.out.println("Digite uma nota, entre 0 e 10: ");
-		nota = leia.nextInt();
+		double nota = 0;
 		
-		do { (int nota !=3) 
-		   System.out.println("Nota não está valendo: ");
-		   System.out.println("Digite uma nota: ");
-		   nota = leia.nextInt();
-		   
-		}while (nota=3) {
+		System.out.println("Entre com uma nota entre 0 e 10: ");
+		nota = sc.nextDouble();
+		
+		while (nota<=0 || nota >=10) {
+			System.out.println("Nota inválida.");
 			
+		System.out.println("Entre com uma nota entre 0 e 10: ");
+		nota = sc.nextDouble();
+		}
+		
+		System.out.println("Nota válida! Valor informado: " + nota);
+		nota = sc.nextDouble();
+		
+		/*A mensagem de nota válida deve estar embaixo da chave " {"
+		 *pois ela fecha o while que foi aberto, ou seja,
+		 *vai pedir a nota correta até que seja colocado o valor válido
+		 */
+		
+		
+			sc.close();
 		}
 		
 		
 		
-		
-		
-leia.close();
+
 	}
 
-}
+

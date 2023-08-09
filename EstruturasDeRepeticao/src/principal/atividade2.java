@@ -16,7 +16,7 @@ public class atividade2 {
 			}
 		
 		for (int contador = 1; contador<=20; contador++) {
-			System.out.print(contador);
+			System.out.print(" " + contador);
 		}
 		
 		leia.close();
