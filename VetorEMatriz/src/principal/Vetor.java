@@ -10,7 +10,6 @@ public class Vetor {
 		// Vetor é unidimensional, uma direção
 		// Os dados do array são armazenados em um espaço de memória
 		
-		// Se o array for do tipo String, ele vai contar cada letra da frase
 		
 		/* (xpto123) = 10, 20, 30, 40
 		 */
