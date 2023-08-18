@@ -2,21 +2,24 @@ package principal;
 
 import java.util.Scanner;
 
+import entities.NomeEAnoClasse;
+
 public class NomeEAno {
 
 	public static void main(String[] args) {
+		
 		// Faça um programa que receba o nome e o ano de nascimento e retorne a idade atual do usuário;
 		Scanner sc = new Scanner(System.in);
-		NomeEAno atividade = new NomeEAno();
+		NomeEAnoClasse nomeEAnoClasse = new NomeEAnoClasse();
 		
-		System.out.println("Digite o nome: ");
-	    String nome = sc.nextLine();
-	
-	    System.out.println("Digite o ano de nascimento: ");
-	    String anoNascimento = sc.nextLine();
+		System.out.println("Entre com o nome: ");
+		nomeEAnoClasse.nome = sc.nextLine();
 		
-	    atividade.idadeAtual();
-	    System.out.println("A idade atual é: " + atividade.idadeAtual); 
+		System.out.println("Entre com o ano de nascimento: ");
+		nomeEAnoClasse.anoNascimento = sc.nextInt();
+		
+		nomeEAnoClasse.obterIdade();
+		
 		
 		sc.close();
 

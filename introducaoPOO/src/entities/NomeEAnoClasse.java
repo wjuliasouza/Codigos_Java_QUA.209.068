@@ -3,11 +3,12 @@ package entities;
 public class NomeEAnoClasse {
 
 	public String nome;
-	public int anoNascimento = 0;
-	public int idade;
+	public int anoNascimento;
 	
-	public void idadeAtual () {
-		idade = 2023-anoNascimento;
+	public void obterIdade() {
+		
+		System.out.println("Nome: " + nome);
+		System.out.println("Idade: " + (2023-anoNascimento));
 		
 	}
 }

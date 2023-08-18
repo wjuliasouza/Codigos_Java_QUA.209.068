@@ -1,19 +1,12 @@
 package entities;
 
 public class TerrenoClasse {
-	
-	public double largura =0;
-	public double comprimento=0;
-	public double area = largura*comprimento;
-	
-		
+
+	public double largura;
+	public double comprimento;
+
+	public double obterMetroQuadrado() {
+		return largura * comprimento;
 	}
 
-	
-
-	
-	
-	
-	
-
-
+}
